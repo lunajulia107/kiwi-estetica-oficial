@@ -1,0 +1,181 @@
+html,
+body,
+div {
+    font-family: $font-poppins; 
+}
+
+p, table {
+    font-family: $font-roboto;
+}
+
+h1, h2, h3, h4, h5 { 
+    max-width: 700px; 
+} 
+
+.ff-poppins {
+    font-family: $font-poppins;
+}
+
+.btn {
+    border-radius: map-get($rem-sizes, 24);
+} 
+
+.container {
+    @media (max-width: 575px) {
+        width: 90% !important;
+    }
+}
+ 
+header .navbar-brand {
+    width: 88px;
+} 
+
+footer {
+    .navbar-brand {
+        width: 152px; 
+    } 
+
+    a {
+        transition: 0.3s;
+    
+        &.fs-4:hover {
+            font-size: calc(1.275rem + .5vw) !important;
+        }
+
+        &:hover {
+            font-weight: 600;
+        }
+    } 
+
+    .border-top {
+        border-color: #a3c56729 !important;
+    }
+}
+
+aside { 
+    @media (min-width: 991px) {
+        position: fixed;
+        width: inherit;
+    }
+
+    .navbar-brand img {
+        width: 94px;   
+    }
+
+    .nav-link.active {
+        background-color: rgb(0 0 0 / 40%);
+        border-radius: 8px;
+    }
+} 
+
+a.text-lime-green {
+    transition: 0.3s;
+    
+    &:hover {
+        font-weight: 600 !important;
+    }
+}
+
+.react-card-flip {
+    width: 100%;
+}
+
+.background-circles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+ 
+  &::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: map-get($colors, muted-sage);
+    bottom: -100px;
+    right: 24px;
+    z-index: 0;
+
+    @media (max-width: 1400px) {
+      right: -10px;
+      width: 300px;
+      height: 300px;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+ 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: map-get($colors, muted-sage);
+    top: -100px;
+    left: -100px;
+    z-index: 0;
+
+    @media (max-width: 1400px) {
+      width: 200px;
+      height: 200px;
+      top: -80px;
+      left: -80px;
+    }
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+}
+
+.section-home {
+    .background-circles::after,
+    .background-circles::before {
+        background: #dae2cb0f; 
+    }
+} 
+
+#DataTables_Table_0_wrapper {
+    display: flex;
+    flex-direction: column; 
+    gap: map-get($rem-sizes, 16);
+
+    th span {
+        font-weight: 600;
+    }
+
+    .active>.page-link, .page-link.active {
+        background-color: #0A3521;
+        border-color: #0A3521;
+    }
+
+    .dt-length, 
+    .dt-search {
+        display: flex;
+    }
+}
+
+.login-image {
+    @media (max-width: 1200px) {
+        height: 200px !important;
+    } 
+}
+
+.login {
+    @media (max-width: 1200px) {
+        margin-top: -72px;
+        z-index: 1;
+    }     
+}
+
+
+
+ 
+
+
+

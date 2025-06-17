@@ -1,0 +1,38 @@
+// Fonts
+$font-poppins: 'Poppins', sans-serif; 
+$font-roboto: 'Roboto', sans-serif;
+
+// Colors  
+$colors: (
+  "white": #fff,
+  "lavender": #F8F3EE,
+  "brown": #614C33, 
+  "forest-green": #0A3521,
+  "lime-green": #97C249,
+  "sage-green": #a3c567,
+  "pale-sage": #d8e7be,
+  "muted-sage": #dae2cb91,
+  "black": #111111
+); 
+  
+// Font Sizes (rem)
+$rem-sizes: (
+  2: 0.125rem,
+  4: 0.25rem,
+  8: 0.5rem,
+  10: 0.625rem,
+  12: 0.75rem,
+  14: 0.875rem,
+  16: 1rem,
+  20: 1.25rem,
+  24: 1.5rem,
+  32: 2rem,
+  40: 2.5rem,
+  48: 3rem,
+  56: 3.5rem,
+  64: 4rem,
+  72: 4.5rem,
+  80: 5rem,
+  88: 5.5rem,
+  96: 6rem
+);
